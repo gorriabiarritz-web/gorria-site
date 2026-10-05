@@ -167,7 +167,7 @@ def soirees_depuis_cache(cache: dict, overrides: dict, cfg: dict) -> list[dict]:
 def phrase_conditions(cfg: dict) -> str:
     t = cfg["TARIFS"]
     a = cfg["ADHESIONS"]
-    s = (f"Entrée {t[0]['montant']} € {t[0]['detail']} · {t[1]['montant']} € {t[1]['detail']} · "
+    s = (f"PAF (participation aux frais) {t[0]['montant']} € {t[0]['detail']} · {t[1]['montant']} € {t[1]['detail']} · "
          f"{t[2]['montant']} € {t[2]['detail']}, + adhésion obligatoire ({a[0]['nom']} {a[0]['montant']} €/{a[0]['duree']} "
          f"ou {a[1]['nom'].lower()} {a[1]['montant']} €). +18 ans, pièce d'identité. Sortie définitive.")
     return s[:255]
