@@ -1,0 +1,82 @@
+{
+  "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
+  "lu_le": "2026-10-06T00:30:36+02:00",
+  "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
+  "videos": [
+    {
+      "id": "pMjHB_og8Mo",
+      "titre": "Remember Trance | A-ghost 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
+      "publie": "2026-10-05T16:00:07+00:00"
+    },
+    {
+      "id": "z4LDtYczICg",
+      "titre": "Techno Hypnotique Hard Trance | Letal X Oyo 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
+      "publie": "2026-10-03T16:00:07+00:00"
+    },
+    {
+      "id": "kuCAGGASVWI",
+      "titre": "Techno Hypnotique Hard Trance | Cyril CDJ X Oyo 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
+      "publie": "2026-10-01T16:00:07+00:00"
+    },
+    {
+      "id": "cKUga0t_GvU",
+      "titre": "Techno Hypnotique Trance | Oyo 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
+      "publie": "2026-09-28T20:00:15+00:00"
+    },
+    {
+      "id": "7Ei5z6MFocU",
+      "titre": "Techno Hypnotique Hard Trance | Lilian X Oyo 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
+      "publie": "2026-09-26T16:00:08+00:00"
+    },
+    {
+      "id": "ZWTvFQDCBg4",
+      "titre": "Hard Techno | Lumi X La Stuck X Maureen 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
+      "publie": "2026-09-22T16:00:08+00:00"
+    },
+    {
+      "id": "E_4q_Ygqx9U",
+      "titre": "Hard Tekno | Pauloramix x Lumi X Beatraders 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
+      "publie": "2026-09-22T00:23:00+00:00"
+    },
+    {
+      "id": "DqtZ_NPdGLQ",
+      "titre": "Psytrance Drum & Bass | Le Machiniste 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
+      "publie": "2026-09-20T16:00:06+00:00"
+    },
+    {
+      "id": "wVKYZFRHArA",
+      "titre": "Remember Trance | Davi2 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
+      "publie": "2026-09-20T07:47:33+00:00"
+    },
+    {
+      "id": "Uu_wl6pc1LQ",
+      "titre": "Bounce Hardbounce | Kooki 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
+      "publie": "2026-09-18T16:00:05+00:00"
+    },
+    {
+      "id": "dE7BxnXpv6s",
+      "titre": "Drum & Bass | Uneek 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
+      "publie": "2026-09-16T16:00:05+00:00"
+    },
+    {
+      "id": "bP3jqzP9Ynw",
+      "titre": "Bounce Hardbounce | HGM 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
+      "publie": "2026-09-14T16:00:05+00:00"
+    },
+    {
+      "id": "XIj21BRMxKg",
+      "titre": "Hard Techno Schranz | Fl!p X Beatraders 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
+      "publie": "2026-09-12T16:00:06+00:00"
+    },
+    {
+      "id": "VmPOhxGacJY",
+      "titre": "Hard Techno Schranz | 6atjak X Imfern 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
+      "publie": "2026-09-10T16:00:06+00:00"
+    },
+    {
+      "id": "5UpljBNSi74",
+      "titre": "Hard Techno Schranz | ReznoЯ 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
+      "publie": "2026-09-08T16:00:05+00:00"
+    }
+  ]
+}
