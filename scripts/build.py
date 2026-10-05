@@ -305,6 +305,21 @@ def cartes_videos(videos: list[dict]) -> str:
     return "\n".join(carte_video(v) for v in videos[:NB_VIDEOS])
 
 
+# ------------------------------------------------------------------ Boutique (Fourthwall)
+
+def cartes_boutique(cfg: dict) -> str:
+    base = cfg.get("BOUTIQUE_URL", "").rstrip("/")
+    cartes = []
+    for p in cfg.get("BOUTIQUE_PRODUITS", []):
+        lien = f"{base}/products/{p['slug']}"
+        cartes.append(f"""
+      <a class="produit" href="{esc(lien)}" rel="noopener">
+        <div class="produit__img"><img src="{esc(p['image'])}" alt="{esc(p['titre'])} GOЯRIA" loading="lazy" width="720" height="720"></div>
+        <p class="produit__nom">{esc(p['titre'])}</p>
+      </a>""")
+    return "\n".join(cartes)
+
+
 def jsonld(soirees: list[dict], cfg: dict) -> str:
     adr = cfg["ADRESSE"]
     lieu = {"@type": "MusicVenue", "name": adr["nom"], "url": cfg["SITE_URL"],
@@ -353,6 +368,8 @@ def faire_index(soirees_a_venir: list[dict], cfg: dict, maint: dt.datetime, vide
         "{{ACCROCHE}}": esc(cfg["ACCROCHE"]),
         "{{CARTES_SOIREES}}": cartes,
         "{{CARTES_VIDEOS}}": cartes_videos(videos or []),
+        "{{CARTES_BOUTIQUE}}": cartes_boutique(cfg),
+        "{{BOUTIQUE_URL}}": esc(cfg.get("BOUTIQUE_URL", "")),
         "{{YOUTUBE_RSS_URL}}": esc(url_flux_youtube(cfg)),
         "{{JSONLD}}": jsonld(soirees_a_venir, cfg),
         "{{OG_IMAGE}}": esc(og_image),
@@ -447,6 +464,9 @@ def main() -> int:
     (SORTIE / "index.html").write_text(faire_index(a_venir, cfg, maint, videos), encoding="utf-8")
     (SORTIE / "whatsapp").mkdir()
     (SORTIE / "whatsapp" / "index.html").write_text(page_redirection(cfg["WHATSAPP_URL"], "la communauté WhatsApp GOЯRIA"), encoding="utf-8")
+    if cfg.get("BOUTIQUE_URL"):
+        (SORTIE / "boutique").mkdir()
+        (SORTIE / "boutique" / "index.html").write_text(page_redirection(cfg["BOUTIQUE_URL"], "la boutique GOЯRIA"), encoding="utf-8")
     (SORTIE / "adhesion").mkdir()
     (SORTIE / "adhesion" / "index.html").write_text(page_redirection(cfg["ADHESION_URL"], "l'adhésion HelloAsso"), encoding="utf-8")
     (SORTIE / "CNAME").write_text(cfg["SITE_URL"].replace("https://", "") + "\n", encoding="utf-8")
