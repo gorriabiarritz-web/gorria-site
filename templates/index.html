@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio GOЯRIA · Musiques électroniques à Biarritz</title>
+<meta name="description" content="Le Studio GOЯRIA est un tiers-lieu culturel dédié aux musiques électroniques à Biarritz : DJ sets chaque samedi avec les collectifs du Pays Basque, plus de 300 sets sur YouTube, une communauté d'adhérent·es.">
+<link rel="canonical" href="{{SITE_URL}}/">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="text/calendar" title="Soirées Studio GOЯRIA" href="/agenda.ics">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Studio GOЯRIA">
+<meta property="og:title" content="Studio GOЯRIA · Musiques électroniques à Biarritz">
+<meta property="og:description" content="DJ sets chaque samedi au 14 rue des Mésanges, Biarritz. Agenda, adhésion, communauté.">
+<meta property="og:url" content="{{SITE_URL}}/">
+<meta property="og:image" content="{{OG_IMAGE}}">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{{JSONLD}}
+</script>
+<style>
+:root{
+  --noir:#000;--encre:#0b0b0b;--carte:#121212;--trait:#262626;
+  --blanc:#fff;--gris:#b5b5b5;--gris2:#8a8a8a;--rouge:#ff0000;--rouge-txt:#ff4d4d;
+  --r:14px;--max:1120px;
+  --sans: "Inter", "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--noir);color:var(--blanc);font:16px/1.55 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--rouge);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+@media(min-width:720px){.wrap{padding:0 32px}}
+
+/* barre */
+.barre{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--trait)}
+.barre .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.marque{font-weight:900;letter-spacing:.02em;font-size:22px;text-decoration:none}
+.marque span{color:var(--rouge)}
+.nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;text-decoration:none;color:var(--gris);font-size:14px;padding:8px 10px;border-radius:999px}
+.nav a:hover{color:var(--blanc);background:#1a1a1a}
+@media(max-width:719px){.nav .opt{display:none}}
+
+/* héros */
+.heros{position:relative;padding:72px 0 56px;border-bottom:1px solid var(--trait);overflow:hidden}
+.heros::after{content:"";position:absolute;right:-12vw;top:-10vw;width:46vw;height:46vw;border-radius:50%;background:radial-gradient(circle,rgba(255,0,0,.28),rgba(255,0,0,0) 70%);pointer-events:none}
+.sur{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gris)}
+.heros h1{font-size:clamp(56px,14vw,168px);line-height:.86;margin:14px 0 20px;font-weight:900;letter-spacing:-.02em}
+.heros h1 .r{color:var(--rouge)}
+.heros p.intro{font-size:clamp(18px,2.4vw,22px);max-width:640px;color:#e8e8e8;margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:999px;background:var(--rouge);color:#fff;font-weight:700;text-decoration:none;border:1px solid var(--rouge)}
+.btn:hover{background:#d60000}
+.btn--ligne{background:transparent;border-color:#444;color:#fff}
+.btn--ligne:hover{border-color:#fff;background:transparent}
+.infos-rapides{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:32px;color:var(--gris);font-size:14px}
+.infos-rapides b{color:#fff;font-weight:600}
+
+/* sections */
+section{padding:64px 0;border-bottom:1px solid var(--trait)}
+h2{font-size:clamp(30px,5vw,46px);line-height:1.05;margin:0 0 10px;font-weight:900;letter-spacing:-.01em}
+.chapeau{color:var(--gris);max-width:680px;margin:0 0 32px}
+
+/* agenda */
+.grille{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))}
+.soiree{background:var(--carte);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.soiree--off{opacity:.55}
+.soiree__img{aspect-ratio:1200/630;background:#1a1a1a;overflow:hidden}
+.soiree__img img{width:100%;height:100%;object-fit:cover}
+.img-vide{height:100%;display:grid;place-items:center;font-weight:900;font-size:40px;color:#2a2a2a}
+.soiree__corps{padding:18px 18px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.soiree__date{margin:0;font-size:14px;color:var(--rouge-txt);letter-spacing:.04em}
+.soiree__date b{font-weight:800}
+.soiree h3{margin:2px 0 2px;font-size:21px;line-height:1.2;font-weight:800}
+.soiree__lineup{margin:0;color:#eaeaea;font-weight:600;font-size:15px}
+.soiree__styles{margin:0;color:var(--gris2);font-size:14px}
+.soiree__actions{margin-top:auto;padding-top:14px;display:flex;align-items:center;gap:16px}
+.soiree__actions .btn{min-height:40px;padding:0 18px;font-size:15px}
+.lien{color:var(--gris);font-size:14px}
+.badge{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:999px;background:#fff;color:#000;font-size:12px;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
+.vide{color:var(--gris)}
+.abonnement{margin-top:28px;padding:20px;border:1px dashed #3a3a3a;border-radius:var(--r);display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px}
+.abonnement p{margin:0;flex:1 1 260px;color:#ddd}
+.abonnement .petit{display:block;color:var(--gris2);font-size:13px;margin-top:4px}
+
+/* tarifs / adhésion */
+.deux{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:860px){.deux{grid-template-columns:1fr 1fr}}
+.boite{background:var(--carte);border:1px solid var(--trait);border-radius:var(--r);padding:24px}
+.boite h3{margin:0 0 14px;font-size:20px}
+.ligne-prix{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-top:1px solid var(--trait)}
+.ligne-prix:first-of-type{border-top:0}
+.ligne-prix .nom{font-weight:700}
+.ligne-prix .det{color:var(--gris2);font-size:14px;display:block;font-weight:400}
+.ligne-prix .p{font-size:28px;font-weight:900;white-space:nowrap}
+.note{color:var(--gris);font-size:14px;margin:16px 0 0}
+.boite .btn{margin-top:18px}
+
+/* infos pratiques */
+.liste-infos{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));margin:0;padding:0;list-style:none}
+.liste-infos li{background:var(--carte);border:1px solid var(--trait);border-radius:var(--r);padding:18px}
+.liste-infos .t{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gris2);margin-bottom:6px}
+.liste-infos b{font-size:17px}
+
+/* communauté */
+.reseaux{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}
+.reseau{display:block;text-decoration:none;background:var(--carte);border:1px solid var(--trait);border-radius:var(--r);padding:20px;transition:border-color .15s}
+.reseau:hover{border-color:#555}
+.reseau .n{font-weight:800;font-size:18px;display:flex;justify-content:space-between}
+.reseau .n::after{content:"↗";color:var(--rouge)}
+.reseau p{margin:6px 0 0;color:var(--gris);font-size:14px}
+.reseau--fort{border-color:var(--rouge)}
+
+/* pied */
+footer{padding:48px 0 64px;color:var(--gris2);font-size:14px}
+footer .wrap{display:grid;gap:24px}
+@media(min-width:860px){footer .wrap{grid-template-columns:1.2fr 1fr}}
+footer h2{font-size:18px;color:var(--blanc);margin-bottom:8px}
+footer p{margin:0 0 8px}
+footer a{color:var(--gris)}
+.mot{font-weight:900;font-size:clamp(64px,18vw,200px);line-height:.8;color:#111;letter-spacing:-.03em;margin:40px 0 0;user-select:none}
+.mot span{color:#2a0000}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="barre">
+  <div class="wrap">
+    <a class="marque" href="#haut" aria-label="Studio GOЯRIA, haut de page">GO<span>Я</span>RIA</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#agenda">Agenda</a>
+      <a href="#adhesion">Adhésion</a>
+      <a href="#infos">Infos</a>
+      <a href="#communaute">Communauté</a>
+      <a class="opt" href="#participer">Participer</a>
+    </nav>
+  </div>
+</header>
+
+<main id="haut">
+  <div class="heros">
+    <div class="wrap">
+      <p class="sur">Biarritz · Pays Basque · depuis juin 2023</p>
+      <h1>GO<span class="r">Я</span>RIA</h1>
+      <p class="intro">{{ACCROCHE}}. Des DJ sets chaque samedi, portés par les collectifs du Pays Basque et d'ailleurs, et une communauté de passionné·es qui fait vivre le lieu sans aucune subvention.</p>
+      <div class="actions">
+        <a class="btn" href="#agenda">Prochaines soirées</a>
+        <a class="btn btn--ligne" href="{{ADHESION_URL}}" rel="noopener">Adhérer</a>
+      </div>
+      <p class="infos-rapides"><span><b>{{ADRESSE_RUE}}</b>, {{ADRESSE_VILLE}}</span><span><b>{{HORAIRES}}</b></span><span><b>+18 ans</b> · pièce d'identité</span></p>
+    </div>
+  </div>
+
+  <section id="agenda" aria-labelledby="t-agenda">
+    <div class="wrap">
+      <h2 id="t-agenda">Agenda</h2>
+      <p class="chapeau">Les soirées à venir. Réserve en prévente pour le meilleur tarif : les places sont limitées et l'adhésion est obligatoire.</p>
+      <div class="grille">
+{{CARTES_SOIREES}}
+      </div>
+      <div class="abonnement">
+        <p><b>Ajoute les soirées à ton agenda.</b> Elles apparaissent toutes seules dans ton téléphone, et les changements suivent.
+          <span class="petit">Google Agenda peut mettre jusqu'à 24 h à afficher une nouveauté.</span></p>
+        <a class="btn btn--ligne" href="{{ICS_WEBCAL}}">iPhone · Mac · Outlook</a>
+        <a class="btn btn--ligne" href="{{ICS_GOOGLE}}" rel="noopener">Google Agenda</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="adhesion" aria-labelledby="t-adh">
+    <div class="wrap">
+      <h2 id="t-adh">Adhésion et entrée</h2>
+      <p class="chapeau">Le Studio GOЯRIA est un lieu associatif : on y entre en adhérent·e de l'association {{ASSO_NOM}}. L'adhésion se prend une fois, la place à chaque soirée.</p>
+      <div class="deux">
+        <div class="boite">
+          <h3>1. L'adhésion (obligatoire)</h3>
+          <div class="ligne-prix"><span class="nom">Découverte<span class="det">{{A1D}}</span></span><span class="p">{{A1}} €</span></div>
+          <div class="ligne-prix"><span class="nom">Annuelle<span class="det">{{A2D}} · préventes 48 h avant tout le monde</span></span><span class="p">{{A2}} €</span></div>
+          <a class="btn" href="{{ADHESION_URL}}" rel="noopener">Adhérer sur HelloAsso</a>
+        </div>
+        <div class="boite">
+          <h3>2. La place de la soirée</h3>
+          <div class="ligne-prix"><span class="nom">Early<span class="det">{{T1D}}</span></span><span class="p">{{T1}} €</span></div>
+          <div class="ligne-prix"><span class="nom">Normal<span class="det">{{T2D}}</span></span><span class="p">{{T2}} €</span></div>
+          <div class="ligne-prix"><span class="nom">Late<span class="det">{{T3D}}</span></span><span class="p">{{T3}} €</span></div>
+          <a class="btn btn--ligne" href="#agenda">Choisir une soirée</a>
+        </div>
+      </div>
+      <p class="note">Première fois ? Fais ton adhésion avant de venir, puis réserve ta place : tu gagnes du temps à l'entrée.</p>
+    </div>
+  </section>
+
+  <section id="infos" aria-labelledby="t-infos">
+    <div class="wrap">
+      <h2 id="t-infos">Infos pratiques</h2>
+      <p class="chapeau">Quelques règles simples pour que chaque soirée se passe bien, pour toi comme pour le voisinage.</p>
+      <ul class="liste-infos">
+        <li><span class="t">Adresse</span><b>{{ADRESSE_RUE}}</b><br>{{ADRESSE_VILLE}}<br><a href="{{ITINERAIRE_URL}}" rel="noopener">Itinéraire ↗</a></li>
+        <li><span class="t">Horaires</span><b>{{HORAIRES}}</b><br>Le tarif Early s'arrête à 1h.</li>
+        <li><span class="t">Âge</span><b>+18 ans</b><br>Pièce d'identité demandée à l'entrée.</li>
+        <li><span class="t">Sortie</span><b>Toute sortie est définitive</b><br>Pas de before ni d'after sur le parking.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="communaute" aria-labelledby="t-com">
+    <div class="wrap">
+      <h2 id="t-com">La communauté</h2>
+      <p class="chapeau">Chaque set joué au studio est enregistré et partagé : {{NB_SETS}} sets sont déjà en ligne sur notre chaîne YouTube.</p>
+      <div class="reseaux">
+        <a class="reseau reseau--fort" href="{{WHATSAPP_URL}}" rel="noopener"><span class="n">WhatsApp</span><p>La communauté GOЯRIA : programmation, préventes, sets mis en ligne. Groupe Infos en accès libre.</p></a>
+        <a class="reseau" href="{{YOUTUBE_ABONNEMENT_URL}}" rel="noopener"><span class="n">YouTube</span><p>Abonne-toi et active la cloche pour être prévenu·e quand les sets de ta soirée sortent.</p></a>
+        <a class="reseau" href="{{YOUTUBE_PODCASTS_URL}}" rel="noopener"><span class="n">Podcasts</span><p>Les sets à écouter en podcast, bientôt rangés par style : trance, tekno, hard techno, house…</p></a>
+        <a class="reseau" href="{{INSTAGRAM_URL}}" rel="noopener"><span class="n">Instagram</span><p>@gorria.biarritz : annonces, carrousels et extraits des soirées.</p></a>
+        <a class="reseau" href="{{FACEBOOK_URL}}" rel="noopener"><span class="n">Facebook</span><p>Les événements de chaque soirée.</p></a>
+        <a class="reseau" href="{{TIKTOK_URL}}" rel="noopener"><span class="n">TikTok</span><p>Les meilleurs moments, en vertical.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="participer" aria-labelledby="t-part">
+    <div class="wrap">
+      <h2 id="t-part">Participer</h2>
+      <p class="chapeau">Le studio vit grâce aux collectifs qui le programment et aux bénévoles qui tiennent l'accueil et le bar.</p>
+      <div class="deux">
+        <div class="boite">
+          <h3>Proposer une soirée</h3>
+          <p>Collectif, label ou artiste : propose ta date. Pour figurer dans la newsletter mensuelle, envoie toutes les infos (texte, line-up définitif, visuel) <b>avant le 25 du mois</b> qui précède ta soirée.</p>
+          <a class="btn" href="{{PROPOSER_URL}}" rel="noopener">Proposer un événement</a>
+        </div>
+        <div class="boite">
+          <h3>Devenir bénévole</h3>
+          <p>Accueil, bar : rejoins l'équipe Auzolan. Une soirée d'initiation t'attend avant ta première fois.</p>
+          <a class="btn btn--ligne" href="{{BENEVOLAT_URL}}" rel="noopener">Je veux aider</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h2>Contact</h2>
+      <p><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+      <p>Studio GOЯRIA, {{ADRESSE_RUE}}, {{ADRESSE_VILLE}}</p>
+      <p>Agenda aussi sur <a href="{{OPENAGENDA_URL}}" rel="noopener">OpenAgenda</a> · <a href="{{ICS_URL}}">agenda.ics</a></p>
+    </div>
+    <div id="mentions">
+      <h2>Mentions légales</h2>
+      <p>Site édité par l'association {{ASSO_NOM}} (loi 1901), siège à {{ASSO_SIEGE}}, SIRET {{ASSO_SIRET}}. Directeur de la publication : le représentant légal de l'association.</p>
+      <p>Hébergement : GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis).</p>
+      <p>Aucun cookie, aucune mesure d'audience. Les adhésions et les places sont gérées par HelloAsso.</p>
+      <p>Mis à jour le {{MAJ}}.</p>
+    </div>
+  </div>
+  <div class="wrap"><p class="mot" aria-hidden="true">GO<span>Я</span>RIA</p></div>
+</footer>
+</body>
+</html>
