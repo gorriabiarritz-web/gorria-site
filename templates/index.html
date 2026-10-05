@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="text/calendar" title="Soirées Studio GOЯRIA" href="/agenda.ics">
+<link rel="alternate" type="application/atom+xml" title="Derniers sets du Studio GOЯRIA (YouTube)" href="{{YOUTUBE_RSS_URL}}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Studio GOЯRIA">
@@ -89,6 +90,19 @@ h2{font-size:clamp(30px,5vw,46px);line-height:1.05;margin:0 0 10px;font-weight:9
 .abonnement p{margin:0;flex:1 1 260px;color:#ddd}
 .abonnement .petit{display:block;color:var(--gris2);font-size:13px;margin-top:4px}
 
+/* derniers sets */
+.videos{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.video{display:flex;flex-direction:column;text-decoration:none;background:var(--carte);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;transition:border-color .15s}
+.video:hover{border-color:#555}
+.video__img{position:relative;aspect-ratio:16/9;background:#1a1a1a;overflow:hidden}
+.video__img img{width:100%;height:100%;object-fit:cover}
+.video__play{position:absolute;right:12px;bottom:12px;width:44px;height:44px;border-radius:50%;background:var(--rouge);display:grid;place-items:center;font-size:16px;color:#fff}
+.video__corps{padding:16px 18px 18px}
+.video__style{margin:0;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--rouge-txt);font-weight:700}
+.video h3{margin:4px 0 2px;font-size:20px;line-height:1.2;font-weight:800}
+.video__date{margin:0;color:var(--gris2);font-size:14px}
+.actions-sets{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
 /* tarifs / adhésion */
 .deux{display:grid;gap:20px;grid-template-columns:1fr}
 @media(min-width:860px){.deux{grid-template-columns:1fr 1fr}}
@@ -135,6 +149,7 @@ footer a{color:var(--gris)}
     <a class="marque" href="#haut" aria-label="Studio GOЯRIA, haut de page">GO<span>Я</span>RIA</a>
     <nav class="nav" aria-label="Sections">
       <a href="#agenda">Agenda</a>
+      <a href="#sets">Sets</a>
       <a href="#adhesion">Adhésion</a>
       <a href="#infos">Infos</a>
       <a href="#communaute">Communauté</a>
@@ -160,7 +175,7 @@ footer a{color:var(--gris)}
   <section id="agenda" aria-labelledby="t-agenda">
     <div class="wrap">
       <h2 id="t-agenda">Agenda</h2>
-      <p class="chapeau">Les soirées à venir. Réserve en prévente pour le meilleur tarif : les places sont limitées et l'adhésion est obligatoire.</p>
+      <p class="chapeau">Les soirées à venir. Prends ta PAF (participation aux frais) en prévente pour le meilleur tarif : la jauge est limitée et l'adhésion est obligatoire.</p>
       <div class="grille">
 {{CARTES_SOIREES}}
       </div>
@@ -173,10 +188,25 @@ footer a{color:var(--gris)}
     </div>
   </section>
 
+  <section id="sets" aria-labelledby="t-sets">
+    <div class="wrap">
+      <h2 id="t-sets">Derniers sets</h2>
+      <p class="chapeau">Chaque set joué au studio est filmé et partagé : {{NB_SETS}} sets sont déjà en ligne. Les derniers arrivés :</p>
+      <div class="videos">
+{{CARTES_VIDEOS}}
+      </div>
+      <div class="actions-sets">
+        <a class="btn" href="{{YOUTUBE_ABONNEMENT_URL}}" rel="noopener">S'abonner à la chaîne</a>
+        <a class="btn btn--ligne" href="{{YOUTUBE_PODCASTS_URL}}" rel="noopener">Podcasts par style</a>
+        <a class="btn btn--ligne" href="{{YOUTUBE_RSS_URL}}" rel="noopener">Flux RSS</a>
+      </div>
+    </div>
+  </section>
+
   <section id="adhesion" aria-labelledby="t-adh">
     <div class="wrap">
-      <h2 id="t-adh">Adhésion et entrée</h2>
-      <p class="chapeau">Le Studio GOЯRIA est un lieu associatif : on y entre en adhérent·e de l'association {{ASSO_NOM}}. L'adhésion se prend une fois, la place à chaque soirée.</p>
+      <h2 id="t-adh">Adhésion et PAF</h2>
+      <p class="chapeau">Le Studio GOЯRIA est un lieu associatif : on y entre en adhérent·e de l'association {{ASSO_NOM}}. L'adhésion se prend une fois, la PAF (participation aux frais) à chaque soirée.</p>
       <div class="deux">
         <div class="boite">
           <h3>1. L'adhésion (obligatoire)</h3>
@@ -185,14 +215,14 @@ footer a{color:var(--gris)}
           <a class="btn" href="{{ADHESION_URL}}" rel="noopener">Adhérer sur HelloAsso</a>
         </div>
         <div class="boite">
-          <h3>2. La place de la soirée</h3>
+          <h3>2. La PAF de la soirée (participation aux frais)</h3>
           <div class="ligne-prix"><span class="nom">Early<span class="det">{{T1D}}</span></span><span class="p">{{T1}} €</span></div>
           <div class="ligne-prix"><span class="nom">Normal<span class="det">{{T2D}}</span></span><span class="p">{{T2}} €</span></div>
           <div class="ligne-prix"><span class="nom">Late<span class="det">{{T3D}}</span></span><span class="p">{{T3}} €</span></div>
           <a class="btn btn--ligne" href="#agenda">Choisir une soirée</a>
         </div>
       </div>
-      <p class="note">Première fois ? Fais ton adhésion avant de venir, puis réserve ta place : tu gagnes du temps à l'entrée.</p>
+      <p class="note">Première fois ? Fais ton adhésion avant de venir, puis prends ta PAF en prévente : tu gagnes du temps à l'entrée.</p>
     </div>
   </section>
 
@@ -216,7 +246,7 @@ footer a{color:var(--gris)}
       <div class="reseaux">
         <a class="reseau reseau--fort" href="{{WHATSAPP_URL}}" rel="noopener"><span class="n">WhatsApp</span><p>La communauté GOЯRIA : programmation, préventes, sets mis en ligne. Groupe Infos en accès libre.</p></a>
         <a class="reseau" href="{{YOUTUBE_ABONNEMENT_URL}}" rel="noopener"><span class="n">YouTube</span><p>Abonne-toi et active la cloche pour être prévenu·e quand les sets de ta soirée sortent.</p></a>
-        <a class="reseau" href="{{YOUTUBE_PODCASTS_URL}}" rel="noopener"><span class="n">Podcasts</span><p>Les sets à écouter en podcast, bientôt rangés par style : trance, tekno, hard techno, house…</p></a>
+        <a class="reseau" href="{{YOUTUBE_PODCASTS_URL}}" rel="noopener"><span class="n">Podcasts</span><p>Les sets à écouter en podcast, rangés par style : trance, tekno, hard techno, house…</p></a>
         <a class="reseau" href="{{INSTAGRAM_URL}}" rel="noopener"><span class="n">Instagram</span><p>@gorria.biarritz : annonces, carrousels et extraits des soirées.</p></a>
         <a class="reseau" href="{{FACEBOOK_URL}}" rel="noopener"><span class="n">Facebook</span><p>Les événements de chaque soirée.</p></a>
         <a class="reseau" href="{{TIKTOK_URL}}" rel="noopener"><span class="n">TikTok</span><p>Les meilleurs moments, en vertical.</p></a>
@@ -256,7 +286,7 @@ footer a{color:var(--gris)}
       <h2>Mentions légales</h2>
       <p>Site édité par l'association {{ASSO_NOM}} (loi 1901), siège à {{ASSO_SIEGE}}, SIRET {{ASSO_SIRET}}. Directeur de la publication : le représentant légal de l'association.</p>
       <p>Hébergement : GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis).</p>
-      <p>Aucun cookie, aucune mesure d'audience. Les adhésions et les places sont gérées par HelloAsso.</p>
+      <p>Aucun cookie, aucune mesure d'audience. Les adhésions et les PAF sont gérées par HelloAsso.</p>
       <p>Mis à jour le {{MAJ}}.</p>
     </div>
   </div>
