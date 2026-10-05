@@ -23,6 +23,7 @@ import os
 import shutil
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 
 from commun import (DATA, PARIS, RACINE, SORTIE, config, date_iso, ecrire_json, empreinte,
                     fr_date_longue, lire_json, log, maintenant, phrase_conditions,
@@ -239,6 +240,71 @@ def carte_soiree(e: dict, cfg: dict) -> str:
       </article>"""
 
 
+# ------------------------------------------------------------------ YouTube (flux RSS)
+
+YT_NS = {"a": "http://www.w3.org/2005/Atom", "yt": "http://www.youtube.com/xml/schemas/2015"}
+NB_VIDEOS = 6
+
+
+def url_flux_youtube(cfg: dict) -> str:
+    """Flux Atom public des vidéos longues de la chaîne (playlist UULF = sans les Shorts)."""
+    return "https://www.youtube.com/feeds/videos.xml?playlist_id=" + cfg.get("YOUTUBE_FLUX_PLAYLIST", "UULFxc4rj6lfImrX5L4ztpcJSw")
+
+
+def lire_youtube(cfg: dict, hors_ligne: bool = False) -> list[dict]:
+    """Lit les dernières vidéos de la chaîne. En cas d'échec : data/youtube_cache.json."""
+    cache = lire_json(DATA / "youtube_cache.json", {}) or {}
+    if hors_ligne:
+        return cache.get("videos", [])
+    url = url_flux_youtube(cfg)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "gorria-site/1.0"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            racine = ET.fromstring(r.read())
+        videos = []
+        for e in racine.findall("a:entry", YT_NS):
+            vid = e.findtext("yt:videoId", "", YT_NS).strip()
+            if vid:
+                videos.append({"id": vid, "titre": e.findtext("a:title", "", YT_NS).strip(),
+                               "publie": e.findtext("a:published", "", YT_NS).strip()})
+        if not videos:
+            raise RuntimeError("flux vide")
+        if videos != cache.get("videos"):
+            ecrire_json(DATA / "youtube_cache.json", {
+                "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
+                "lu_le": maintenant().isoformat(timespec="seconds"), "source": url, "videos": videos})
+        log(f"YouTube : {len(videos)} vidéo(s) dans le flux")
+        return videos
+    except Exception as ex:
+        log(f"⚠ YouTube : flux illisible ({ex}) → cache conservé")
+        return cache.get("videos", [])
+
+
+def carte_video(v: dict) -> str:
+    """Titre type « Style | DJ 🇫🇷 | Studio GoЯRia Biarritz | Mois Année »."""
+    morceaux = [m.strip() for m in v["titre"].split("|") if m.strip()]
+    style = morceaux[0] if len(morceaux) > 1 else ""
+    dj = morceaux[1] if len(morceaux) > 1 else v["titre"]
+    quand = morceaux[-1] if len(morceaux) > 2 else ""
+    lien = "https://www.youtube.com/watch?v=" + v["id"]
+    vignette = f"https://i.ytimg.com/vi/{v['id']}/hqdefault.jpg"
+    return f"""
+      <a class="video" href="{esc(lien)}" rel="noopener">
+        <div class="video__img"><img src="{esc(vignette)}" alt="Set {esc(dj)} au Studio GOЯRIA" loading="lazy" width="480" height="360"><span class="video__play" aria-hidden="true">▶</span></div>
+        <div class="video__corps">
+          {f'<p class="video__style">{esc(style)}</p>' if style else ''}
+          <h3>{esc(dj)}</h3>
+          {f'<p class="video__date">{esc(quand)}</p>' if quand else ''}
+        </div>
+      </a>"""
+
+
+def cartes_videos(videos: list[dict]) -> str:
+    if not videos:
+        return '<p class="vide">Les sets sont sur notre chaîne YouTube.</p>'
+    return "\n".join(carte_video(v) for v in videos[:NB_VIDEOS])
+
+
 def jsonld(soirees: list[dict], cfg: dict) -> str:
     adr = cfg["ADRESSE"]
     lieu = {"@type": "MusicVenue", "name": adr["nom"], "url": cfg["SITE_URL"],
@@ -271,7 +337,7 @@ def jsonld(soirees: list[dict], cfg: dict) -> str:
     return json.dumps({"@context": "https://schema.org", "@graph": graphe}, ensure_ascii=False, indent=1).replace("</", "<\\/")
 
 
-def faire_index(soirees_a_venir: list[dict], cfg: dict, maint: dt.datetime) -> str:
+def faire_index(soirees_a_venir: list[dict], cfg: dict, maint: dt.datetime, videos: list[dict] | None = None) -> str:
     gabarit = (RACINE / "templates" / "index.html").read_text(encoding="utf-8")
     if soirees_a_venir:
         cartes = "\n".join(carte_soiree(e, cfg) for e in soirees_a_venir)
@@ -286,6 +352,8 @@ def faire_index(soirees_a_venir: list[dict], cfg: dict, maint: dt.datetime) -> s
         "{{SITE_URL}}": cfg["SITE_URL"],
         "{{ACCROCHE}}": esc(cfg["ACCROCHE"]),
         "{{CARTES_SOIREES}}": cartes,
+        "{{CARTES_VIDEOS}}": cartes_videos(videos or []),
+        "{{YOUTUBE_RSS_URL}}": esc(url_flux_youtube(cfg)),
         "{{JSONLD}}": jsonld(soirees_a_venir, cfg),
         "{{OG_IMAGE}}": esc(og_image),
         "{{ICS_WEBCAL}}": f"webcal://{domaine}/agenda.ics",
@@ -375,7 +443,8 @@ def main() -> int:
                                          "conditions": phrase_conditions(cfg), "events": agenda})
     ecrire_json(DATA / "events.json", {"genere_le": maint.isoformat(timespec="seconds"), "events": agenda})
 
-    (SORTIE / "index.html").write_text(faire_index(a_venir, cfg, maint), encoding="utf-8")
+    videos = lire_youtube(cfg, args.hors_ligne)
+    (SORTIE / "index.html").write_text(faire_index(a_venir, cfg, maint, videos), encoding="utf-8")
     (SORTIE / "whatsapp").mkdir()
     (SORTIE / "whatsapp" / "index.html").write_text(page_redirection(cfg["WHATSAPP_URL"], "la communauté WhatsApp GOЯRIA"), encoding="utf-8")
     (SORTIE / "adhesion").mkdir()
