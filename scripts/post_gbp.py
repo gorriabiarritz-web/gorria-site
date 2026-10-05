@@ -47,9 +47,9 @@ def corps_post(e: dict, cfg: dict) -> dict:
     if e["styles"]:
         lignes.append("🔈 " + " / ".join(e["styles"]))
     t = cfg["TARIFS"]
-    lignes.append(f"⏰ {d.hour}h › {f.hour}h · Early {t[0]['montant']} € {t[0]['detail']}, puis {t[1]['montant']} € / {t[2]['montant']} €")
+    lignes.append(f"⏰ {d.hour}h › {f.hour}h · PAF Early {t[0]['montant']} € {t[0]['detail']}, puis {t[1]['montant']} € / {t[2]['montant']} €")
     lignes.append(f"👤 Adhésion obligatoire (dès {cfg['ADHESIONS'][0]['montant']} €) · +18 ans, pièce d'identité")
-    lignes.append(f"🎟️ Réserve ta place : {e['ticket_url']}")
+    lignes.append(f"🎟️ PAF en prévente : {e['ticket_url']}")
     corps = {
         "languageCode": "fr",
         "topicType": "EVENT",
