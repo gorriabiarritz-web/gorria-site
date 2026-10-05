@@ -103,6 +103,14 @@ h2{font-size:clamp(30px,5vw,46px);line-height:1.05;margin:0 0 10px;font-weight:9
 .video__date{margin:0;color:var(--gris2);font-size:14px}
 .actions-sets{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 
+/* boutique */
+.produits{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr))}
+.produit{display:block;text-decoration:none;background:var(--carte);border:1px solid var(--trait);border-radius:var(--r);overflow:hidden;transition:border-color .15s}
+.produit:hover{border-color:#555}
+.produit__img{aspect-ratio:1/1;background:#e9e9e9;overflow:hidden}
+.produit__img img{width:100%;height:100%;object-fit:cover}
+.produit__nom{margin:0;padding:14px 16px;font-weight:800;font-size:17px}
+
 /* tarifs / adhésion */
 .deux{display:grid;gap:20px;grid-template-columns:1fr}
 @media(min-width:860px){.deux{grid-template-columns:1fr 1fr}}
@@ -150,6 +158,7 @@ footer a{color:var(--gris)}
     <nav class="nav" aria-label="Sections">
       <a href="#agenda">Agenda</a>
       <a href="#sets">Sets</a>
+      <a href="#boutique">Boutique</a>
       <a href="#adhesion">Adhésion</a>
       <a href="#infos">Infos</a>
       <a href="#communaute">Communauté</a>
@@ -199,6 +208,19 @@ footer a{color:var(--gris)}
         <a class="btn" href="{{YOUTUBE_ABONNEMENT_URL}}" rel="noopener">S'abonner à la chaîne</a>
         <a class="btn btn--ligne" href="{{YOUTUBE_PODCASTS_URL}}" rel="noopener">Podcasts par style</a>
         <a class="btn btn--ligne" href="{{YOUTUBE_RSS_URL}}" rel="noopener">Flux RSS</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="boutique" aria-labelledby="t-boutique">
+    <div class="wrap">
+      <h2 id="t-boutique">Boutique</h2>
+      <p class="chapeau">T-shirts, hoodies et goodies GOЯRIA, imprimés à la demande et livrés chez toi. Chaque achat soutient le studio.</p>
+      <div class="produits">
+{{CARTES_BOUTIQUE}}
+      </div>
+      <div class="actions-sets">
+        <a class="btn" href="{{BOUTIQUE_URL}}" rel="noopener">Voir toute la boutique</a>
       </div>
     </div>
   </section>
