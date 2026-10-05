@@ -1,0 +1,93 @@
+# Mise à jour du site gorria.online (tous les jours à 6h UTC, et à chaque
+# modification des réglages, du gabarit ou des scripts).
+#  1. lit HelloAsso → index.html, agenda.ics, events.json, sitemap.xml ;
+#  2. OpenAgenda (simulation tant que la variable OPENAGENDA_ACTIF ≠ 1) ;
+#  3. Google Business Profile (simulation tant que GBP_ACTIF ≠ 1) ;
+#  4. enregistre les fichiers de suivi (data/) puis publie le site sur GitHub Pages.
+# Les étapes 2 et 3 ne bloquent jamais le site.
+name: Mise a jour du site
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/config.json"
+      - "data/overrides.json"
+      - "templates/**"
+      - "static/**"
+      - "scripts/**"
+      - ".github/workflows/update.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site-gorria
+  cancel-in-progress: false
+
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fabriquer le site
+        working-directory: scripts
+        env:
+          HELLOASSO_CLIENT_ID: ${{ secrets.HELLOASSO_CLIENT_ID }}
+          HELLOASSO_CLIENT_SECRET: ${{ secrets.HELLOASSO_CLIENT_SECRET }}
+        run: python build.py
+
+      - name: OpenAgenda
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          OA_SECRET_KEY: ${{ secrets.OA_SECRET_KEY }}
+          OPENAGENDA_ACTIF: ${{ vars.OPENAGENDA_ACTIF }}
+        run: python sync_openagenda.py
+
+      - name: Google Business Profile
+        continue-on-error: true
+        working-directory: scripts
+        env:
+          GBP_CLIENT_ID: ${{ secrets.GBP_CLIENT_ID }}
+          GBP_CLIENT_SECRET: ${{ secrets.GBP_CLIENT_SECRET }}
+          GBP_REFRESH_TOKEN: ${{ secrets.GBP_REFRESH_TOKEN }}
+          GBP_ACCOUNT_ID: ${{ secrets.GBP_ACCOUNT_ID }}
+          GBP_LOCATION_ID: ${{ secrets.GBP_LOCATION_ID }}
+          GBP_ACTIF: ${{ vars.GBP_ACTIF }}
+        run: python post_gbp.py
+
+      - name: Enregistrer les fichiers de suivi
+        run: |
+          git config user.name "gorria-site"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Rien de nouveau dans data/"
+          else
+            git commit -m "Mise a jour automatique des donnees ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deploiement
+        uses: actions/deploy-pages@v4
