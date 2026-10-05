@@ -16,9 +16,9 @@
   "ITINERAIRE_URL": "https://g.co/kgs/JqJYNEK",
   "HORAIRES": "23h > 6h",
   "TARIFS": [
-    {"nom": "Early", "montant": 5, "detail": "avant 1h"},
-    {"nom": "Normal", "montant": 8, "detail": "prévente"},
-    {"nom": "Late", "montant": 10, "detail": "ou sur place"}
+    {"nom": "Early", "montant": 5, "detail": "en prévente uniquement"},
+    {"nom": "Normal", "montant": 8, "detail": "en prévente uniquement"},
+    {"nom": "Late", "montant": 10, "detail": "sur place"}
   ],
   "ADHESIONS": [
     {"nom": "Découverte", "montant": 5, "duree": "1 mois"},
