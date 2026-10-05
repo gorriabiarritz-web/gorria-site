@@ -1,0 +1,9 @@
+{
+  "_doc": "Corrections manuelles, par soirée (clé = fin de l'adresse HelloAsso de la billetterie). Champs possibles : status (\"\" normal, \"full\" complet, \"cancelled\" annulée, \"postponed\" reportée), titre (nom affiché), collectif, masquer (true = n'apparaît nulle part). Exemple ci-dessous, sans effet tant que la clé n'existe pas.",
+  "exemple-de-soiree-gorria-biarritz": {
+    "status": "full",
+    "titre": "NOM DE LA SOIRÉE",
+    "collectif": "Nom du collectif",
+    "masquer": false
+  }
+}
