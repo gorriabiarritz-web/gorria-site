@@ -1,0 +1,52 @@
+{
+  "_doc": "Réglages du site gorria.online. Modifiable à la main sur GitHub : le site se régénère tout seul après chaque modification.",
+  "SITE_URL": "https://gorria.online",
+  "NOM": "Studio GOЯRIA",
+  "NOM_ASCII": "Studio GORRIA",
+  "ACCROCHE": "Tiers-lieu culturel dédié aux musiques électroniques à Biarritz",
+  "ADRESSE": {
+    "nom": "Studio GOЯRIA",
+    "rue": "14 rue des Mésanges",
+    "code_postal": "64200",
+    "ville": "Biarritz",
+    "pays": "FR",
+    "lat": 43.461686,
+    "lng": -1.539144
+  },
+  "ITINERAIRE_URL": "https://g.co/kgs/JqJYNEK",
+  "HORAIRES": "23h > 6h",
+  "TARIFS": [
+    {"nom": "Early", "montant": 5, "detail": "avant 1h"},
+    {"nom": "Normal", "montant": 8, "detail": "prévente"},
+    {"nom": "Late", "montant": 10, "detail": "ou sur place"}
+  ],
+  "ADHESIONS": [
+    {"nom": "Découverte", "montant": 5, "duree": "1 mois"},
+    {"nom": "Annuelle", "montant": 24, "duree": "1 an, soit 2 € par mois"}
+  ],
+  "ADHESION_URL": "https://www.helloasso.com/associations/sound-makers/adhesions/adhesion-studio-gorria-biarritz",
+  "BILLETTERIE_URL": "https://www.helloasso.com/associations/sound-makers/",
+  "PROPOSER_URL": "https://www.helloasso.com/associations/sound-makers/boutiques/gorria",
+  "BENEVOLAT_URL": "https://forms.gle/DoG9P9C7vquMzGac6",
+  "WHATSAPP_URL": "https://chat.whatsapp.com/IM5oZ0GIeC44HYJ1vpY9eO",
+  "YOUTUBE_URL": "https://www.youtube.com/@gorria.biarritz",
+  "YOUTUBE_ABONNEMENT_URL": "https://www.youtube.com/@gorria.biarritz?sub_confirmation=1",
+  "YOUTUBE_PODCASTS_URL": "https://www.youtube.com/@gorria.biarritz/podcasts",
+  "NB_SETS": "plus de 300",
+  "INSTAGRAM_URL": "https://www.instagram.com/gorria.biarritz/",
+  "FACEBOOK_URL": "https://www.facebook.com/gorria.biarritz",
+  "TIKTOK_URL": "https://www.tiktok.com/@gorria.biarritz",
+  "EMAIL": "contact@gorria.online",
+  "ASSOCIATION": {
+    "nom": "Sound Makers",
+    "siege": "Mont-de-Marsan",
+    "siret": "48158791300023"
+  },
+  "HELLOASSO_ORGANISATION": "sound-makers",
+  "OPENAGENDA": {
+    "agenda_uid": 9684453,
+    "location_uid": 14089959,
+    "url": "https://openagenda.com/studio-gorria-biarritz"
+  },
+  "MOTS_INTERDITS": ["club", "clubbing", "boîte", "boite", "fête libre", "fete libre", "free party", "rave"]
+}
