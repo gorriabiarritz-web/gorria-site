@@ -1,0 +1,55 @@
+{
+  "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
+  "lu_le": "2026-10-05T19:30:00+02:00",
+  "source": "API HelloAsso v5 (lecture du 5/10/2026 depuis l'administration)",
+  "formulaires": [
+    {
+      "formSlug": "liaison-collective-focale-1010-gorria-biarritz",
+      "title": "LIAISON COLLECTIVE / FOCALE 1010 / GORRIA / BIARRITZ",
+      "startDate": "2026-10-10T23:00:00+02:00",
+      "endDate": "2026-10-11T06:00:00+02:00",
+      "state": "Public",
+      "url": "https://www.helloasso.com/associations/sound-makers/evenements/liaison-collective-focale-1010-gorria-biarritz",
+      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-b3c91615c5de43408109b1615a29a576.png",
+      "description": "🔈Styles : Techno Hypnotique / Hard Trance / Hardgroove \n🎧 DJ's Guest : OYO • LOOV \n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h ",
+      "tiers": [{"label": "Early", "price": 500}, {"label": "Normal", "price": 800}, {"label": "Late", "price": 1000}],
+      "updatedAt": "2026-10-05T01:51:44.9066667+02:00"
+    },
+    {
+      "formSlug": "groove-district-002-gorria-biarritz",
+      "title": "GROOVE DISTRICT 002 / GORRIA / BIARRITZ",
+      "startDate": "2026-10-17T23:00:00+02:00",
+      "endDate": "2026-10-18T06:00:00+02:00",
+      "state": "Public",
+      "url": "https://www.helloasso.com/associations/sound-makers/evenements/groove-district-002-gorria-biarritz",
+      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-e627b48fca5045bcaca37f34e646a4ab.jpeg",
+      "description": "🔈Styles : Hard Groove / Hard Techno / Trance / Psytrance / Hardcore\n🎧 DJ's Guest : THYLANE • SEYO • CYRIL CDJ\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h",
+      "tiers": [{"label": "Early", "price": 500}, {"label": "Normal", "price": 800}, {"label": "Late", "price": 1000}],
+      "updatedAt": "2026-10-01T13:19:09.42+02:00"
+    },
+    {
+      "formSlug": "night-pulse-dopamine-gorria-biarritz",
+      "title": "NIGHT PULSE / DOPAMINE / GORRIA / BIARRITZ",
+      "startDate": "2026-10-31T23:00:00+01:00",
+      "endDate": "2026-11-01T06:00:00+01:00",
+      "state": "Public",
+      "url": "https://www.helloasso.com/associations/sound-makers/evenements/night-pulse-dopamine-gorria-biarritz",
+      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-ece047c3b9134030936f07a18bbb96ba.jpeg",
+      "description": "🔈 Styles : Techno / Hard Techno / Trance / Hard Bounce\n🎧 Dj's guest : BOGGY • MAX GUZZI • ULYS51\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h ",
+      "tiers": [{"label": "Early", "price": 500}, {"label": "Normal", "price": 800}, {"label": "Late", "price": 1000}],
+      "updatedAt": "2026-09-09T11:24:00.2833333+02:00"
+    },
+    {
+      "formSlug": "la-pastek-skuddimension2-gorria-biarritz",
+      "title": "LA PASTEK / SKUD DIMENSION 2 / GORRIA / BIARRITZ",
+      "startDate": "2026-10-03T23:00:00+02:00",
+      "endDate": "2026-10-04T06:00:00+02:00",
+      "state": "Public",
+      "url": "https://www.helloasso.com/associations/sound-makers/evenements/la-pastek-skuddimension2-gorria-biarritz",
+      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-18bd9194e4e44ddfac9482ac4c870480.jpeg",
+      "description": "🔈Styles : Techno / Acid / Tribe\n🎧 DJ's Guest : ZED • ROMAN • OXYDE14 • 220 MICRON • PAB'S • BEATRADERS\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h ",
+      "tiers": [{"label": "Early", "price": 500}, {"label": "Normal", "price": 800}, {"label": "Late", "price": 1000}],
+      "updatedAt": "2026-10-03T19:20:37.29+02:00"
+    }
+  ]
+}
