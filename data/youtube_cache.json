@@ -1,8 +1,13 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-10-07T14:39:30+02:00",
+  "lu_le": "2026-10-08T14:49:26+02:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
+    {
+      "id": "wVKYZFRHArA",
+      "titre": "Remember Trance | Davi2 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
+      "publie": "2026-10-07T16:00:07+00:00"
+    },
     {
       "id": "pMjHB_og8Mo",
       "titre": "Remember Trance | A-ghost 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
@@ -52,11 +57,6 @@
       "id": "8nzC1WZFLxo",
       "titre": "Hard Dance Trance | Jenna 🇦🇺 | Studio GoЯRia Biarritz | Septembre 2026",
       "publie": "2026-09-20T07:50:06+00:00"
-    },
-    {
-      "id": "wVKYZFRHArA",
-      "titre": "Remember Trance | Davi2 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
-      "publie": "2026-09-20T07:47:33+00:00"
     },
     {
       "id": "Uu_wl6pc1LQ",
