@@ -1,6 +1,6 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-10-12T16:26:29+02:00",
+  "lu_le": "2026-10-13T15:35:02+02:00",
   "source": "API HelloAsso v5",
   "formulaires": [
     {
@@ -94,31 +94,6 @@
         }
       ],
       "updatedAt": "2026-10-03T19:20:37.29+02:00"
-    },
-    {
-      "formSlug": "liaison-collective-focale-1209-gorria-biarritz",
-      "title": "LIAISON COLLECTIVE / FOCALE 1209 / GORRIA / BIARRITZ",
-      "startDate": "2026-09-12T23:00:00+02:00",
-      "endDate": "2026-09-13T06:00:00+02:00",
-      "state": "Public",
-      "url": "https://www.helloasso.com/associations/sound-makers/evenements/liaison-collective-focale-1209-gorria-biarritz",
-      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-b199f9357ec2488fa0d66cafd3fbdbc7.png",
-      "description": "🔈Styles : Techno Hypnotique / Hard Trance / Hardgroove / Progressive Trance / Ghetto Tech / Hard Bounce\n🎧 DJ's Guest : OYO • LOOV • LETAL • CYRIL CDJ • LILIAN\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h ",
-      "tiers": [
-        {
-          "label": "Early",
-          "price": 500
-        },
-        {
-          "label": "Normal",
-          "price": 800
-        },
-        {
-          "label": "Late",
-          "price": 1000
-        }
-      ],
-      "updatedAt": "2026-09-13T01:10:58.0366667+02:00"
     },
     {
       "formSlug": "night-pulse-dopamine-gorria-biarritz",

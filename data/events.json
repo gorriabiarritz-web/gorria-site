@@ -1,51 +1,6 @@
 {
-  "genere_le": "2026-10-12T16:26:24+02:00",
+  "genere_le": "2026-10-13T15:34:56+02:00",
   "events": [
-    {
-      "id": "helloasso:liaison-collective-focale-1209-gorria-biarritz",
-      "slug": "liaison-collective-focale-1209-gorria-biarritz",
-      "title": "LIAISON COLLECTIVE · FOCALE 1209",
-      "title_ascii": "LIAISON COLLECTIVE · FOCALE 1209",
-      "collective": "",
-      "lineup": [
-        "OYO",
-        "LOOV",
-        "LETAL",
-        "CYRIL CDJ",
-        "LILIAN"
-      ],
-      "styles": [
-        "Techno Hypnotique",
-        "Hard Trance",
-        "Hardgroove",
-        "Progressive Trance",
-        "Ghetto Tech",
-        "Hard Bounce"
-      ],
-      "start": "2026-09-12T23:00:00+02:00",
-      "end": "2026-09-13T06:00:00+02:00",
-      "status": "scheduled",
-      "description_short": "Musiques électroniques au Studio GOЯRIA. OYO • LOOV • LETAL • CYRIL CDJ • LILIAN. 23h–6h. Adhésion requise. +18 ans.",
-      "description_long": "",
-      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-b199f9357ec2488fa0d66cafd3fbdbc7.png",
-      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/liaison-collective-focale-1209-gorria-biarritz",
-      "prices": [
-        5,
-        8,
-        10
-      ],
-      "age_min": 18,
-      "venue": {
-        "nom": "Studio GOЯRIA",
-        "rue": "14 rue des Mésanges",
-        "code_postal": "64200",
-        "ville": "Biarritz",
-        "pays": "FR",
-        "lat": 43.461686,
-        "lng": -1.539144
-      },
-      "updated_at": "2026-09-13T01:10:58.0366667+02:00"
-    },
     {
       "id": "helloasso:zona-prohibida-angel-gonzales-gorria-biarritz",
       "slug": "zona-prohibida-angel-gonzales-gorria-biarritz",
