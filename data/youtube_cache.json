@@ -1,8 +1,13 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-10-12T16:26:30+02:00",
+  "lu_le": "2026-10-15T12:52:22+02:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
+    {
+      "id": "4G3jMKIBjJE",
+      "titre": "Industrial Hard Techno | GZK X Kosmo 🇫🇷 | Studio GoЯRia Biarritz | Juillet 2026",
+      "publie": "2026-10-14T16:00:14+00:00"
+    },
     {
       "id": "HCBn5V-6Vs0",
       "titre": "Remember Trance Bumping | Angel Gonzalez X Sound Makers | Studio GoЯRia Biarritz | Septembre 2026",
@@ -22,6 +27,21 @@
       "id": "pMjHB_og8Mo",
       "titre": "Remember Trance | A-ghost 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
       "publie": "2026-10-05T16:00:07+00:00"
+    },
+    {
+      "id": "poDvdsPjicg",
+      "titre": "Hard Tekno Schranz | Pab's X Beatraders 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-05T09:06:04+00:00"
+    },
+    {
+      "id": "3HD2MdPDe2k",
+      "titre": "Acid Tekno | Roman 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-05T09:03:50+00:00"
+    },
+    {
+      "id": "0ys76O37cLI",
+      "titre": "Minimal Tek | Oxyde14 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-05T09:01:11+00:00"
     },
     {
       "id": "z4LDtYczICg",
@@ -57,26 +77,6 @@
       "id": "DqtZ_NPdGLQ",
       "titre": "Psytrance Drum & Bass | Le Machiniste 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
       "publie": "2026-09-20T16:00:06+00:00"
-    },
-    {
-      "id": "Uu_wl6pc1LQ",
-      "titre": "Bounce Hardbounce | Kooki 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
-      "publie": "2026-09-18T16:00:05+00:00"
-    },
-    {
-      "id": "dE7BxnXpv6s",
-      "titre": "Drum & Bass | Uneek 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
-      "publie": "2026-09-16T16:00:05+00:00"
-    },
-    {
-      "id": "bP3jqzP9Ynw",
-      "titre": "Bounce Hardbounce | HGM 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
-      "publie": "2026-09-14T16:00:05+00:00"
-    },
-    {
-      "id": "XIj21BRMxKg",
-      "titre": "Hard Techno Schranz | Fl!p X Beatraders 🇫🇷 | Studio GoЯRia Biarritz | Août 2026",
-      "publie": "2026-09-12T16:00:06+00:00"
     }
   ]
 }
