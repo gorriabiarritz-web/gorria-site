@@ -1,6 +1,6 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-10-17T12:08:57+02:00",
+  "lu_le": "2026-10-18T12:24:11+02:00",
   "source": "API HelloAsso v5",
   "formulaires": [
     {
@@ -56,10 +56,6 @@
       "description": "🔈Styles : Hard Groove / Hard Techno / Trance / Psytrance / Hardcore\n🎧 DJ's Guest : THYLANE • SEYO • CYRIL CDJ\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h",
       "tiers": [
         {
-          "label": "Early",
-          "price": 500
-        },
-        {
           "label": "Normal",
           "price": 800
         },
@@ -68,7 +64,7 @@
           "price": 1000
         }
       ],
-      "updatedAt": "2026-10-01T13:19:09.42+02:00"
+      "updatedAt": "2026-10-18T01:46:30.8066667+02:00"
     },
     {
       "formSlug": "la-pastek-skuddimension2-gorria-biarritz",
