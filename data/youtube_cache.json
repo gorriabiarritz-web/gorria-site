@@ -1,8 +1,13 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-10-17T12:08:57+02:00",
+  "lu_le": "2026-10-19T14:08:51+02:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
+    {
+      "id": "3HD2MdPDe2k",
+      "titre": "Acid Tekno | Roman 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-18T16:00:07+00:00"
+    },
     {
       "id": "0ys76O37cLI",
       "titre": "Minimal Tek | Oxyde14 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
@@ -37,11 +42,6 @@
       "id": "poDvdsPjicg",
       "titre": "Hard Tekno Schranz | Pab's X Beatraders 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-10-05T09:06:04+00:00"
-    },
-    {
-      "id": "3HD2MdPDe2k",
-      "titre": "Acid Tekno | Roman 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-05T09:03:50+00:00"
     },
     {
       "id": "z4LDtYczICg",
