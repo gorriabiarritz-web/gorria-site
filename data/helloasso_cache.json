@@ -1,6 +1,6 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-10-19T14:08:50+02:00",
+  "lu_le": "2026-10-20T12:56:30+02:00",
   "source": "API HelloAsso v5",
   "formulaires": [
     {
@@ -115,27 +115,6 @@
         }
       ],
       "updatedAt": "2026-09-09T11:24:00.2833333+02:00"
-    },
-    {
-      "formSlug": "zona-prohibida-angel-gonzales-gorria-biarritz",
-      "title": "ZONA PROHIBIDA / ANGEL GONZALES / GORRIA / BIARRITZ",
-      "startDate": "2026-09-19T23:00:00+02:00",
-      "endDate": "2026-09-20T06:00:00+02:00",
-      "state": "Public",
-      "url": "https://www.helloasso.com/associations/sound-makers/evenements/zona-prohibida-angel-gonzales-gorria-biarritz",
-      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-d0fda7766fb143a9af64ad28998c811f.jpeg",
-      "description": "🔈 Styles : Techno / Trance / Remember / Progressive\n🎧 Dj's guest : JENNA • ANGEL GONZALEZ • SOUND MAKERS • NAY-B • DAVI2 • A-GHOST\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaires : ouverture des portes 23h ",
-      "tiers": [
-        {
-          "label": "Normal",
-          "price": 800
-        },
-        {
-          "label": "Late",
-          "price": 1000
-        }
-      ],
-      "updatedAt": "2026-09-20T01:13:41.26+02:00"
     }
   ]
 }

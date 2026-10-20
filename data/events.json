@@ -1,49 +1,6 @@
 {
-  "genere_le": "2026-10-19T14:08:46+02:00",
+  "genere_le": "2026-10-20T12:56:26+02:00",
   "events": [
-    {
-      "id": "helloasso:zona-prohibida-angel-gonzales-gorria-biarritz",
-      "slug": "zona-prohibida-angel-gonzales-gorria-biarritz",
-      "title": "ZONA PROHIBIDA · ANGEL GONZALES",
-      "title_ascii": "ZONA PROHIBIDA · ANGEL GONZALES",
-      "collective": "",
-      "lineup": [
-        "JENNA",
-        "ANGEL GONZALEZ",
-        "SOUND MAKERS",
-        "NAY-B",
-        "DAVI2",
-        "A-GHOST"
-      ],
-      "styles": [
-        "Techno",
-        "Trance",
-        "Remember",
-        "Progressive"
-      ],
-      "start": "2026-09-19T23:00:00+02:00",
-      "end": "2026-09-20T06:00:00+02:00",
-      "status": "scheduled",
-      "description_short": "Musiques électroniques au Studio GOЯRIA. JENNA • ANGEL GONZALEZ • SOUND MAKERS • NAY-B • DAVI2 • A-GHOST. 23h–6h. Adhésion requise. +18 ans.",
-      "description_long": "",
-      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-d0fda7766fb143a9af64ad28998c811f.jpeg",
-      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/zona-prohibida-angel-gonzales-gorria-biarritz",
-      "prices": [
-        8,
-        10
-      ],
-      "age_min": 18,
-      "venue": {
-        "nom": "Studio GOЯRIA",
-        "rue": "14 rue des Mésanges",
-        "code_postal": "64200",
-        "ville": "Biarritz",
-        "pays": "FR",
-        "lat": 43.461686,
-        "lng": -1.539144
-      },
-      "updated_at": "2026-09-20T01:13:41.26+02:00"
-    },
     {
       "id": "helloasso:la-pastek-skuddimension2-gorria-biarritz",
       "slug": "la-pastek-skuddimension2-gorria-biarritz",
