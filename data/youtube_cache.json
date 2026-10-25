@@ -1,8 +1,13 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-10-23T13:01:05+02:00",
+  "lu_le": "2026-10-25T11:43:52+01:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
+    {
+      "id": "6yVHYrDVezw",
+      "titre": "Hard Techno | Beatraders 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-24T16:00:08+00:00"
+    },
     {
       "id": "bHBywmP4Cj8",
       "titre": "Techno Trance | Oyo X Loov 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
@@ -37,11 +42,6 @@
       "id": "za6TwdXkr_4",
       "titre": "Trance | A-Ghost | Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-10-18T06:31:43+00:00"
-    },
-    {
-      "id": "6yVHYrDVezw",
-      "titre": "Hard Techno | Beatraders 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-17T18:11:56+00:00"
     },
     {
       "id": "0ys76O37cLI",
