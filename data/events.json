@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-10-27T12:36:36+01:00",
+  "genere_le": "2026-10-28T13:07:20+01:00",
   "events": [
     {
       "id": "helloasso:la-pastek-skuddimension2-gorria-biarritz",
@@ -199,6 +199,48 @@
         "lng": -1.539144
       },
       "updated_at": "2026-09-09T11:24:00.2833333+02:00"
+    },
+    {
+      "id": "helloasso:0711-zona-prohibida-gorria-biarritz",
+      "slug": "0711-zona-prohibida-gorria-biarritz",
+      "title": "ZONA PROHIBIDA",
+      "title_ascii": "ZONA PROHIBIDA",
+      "collective": "",
+      "lineup": [
+        "A-GHOST",
+        "ANGEL GATO",
+        "AZULVERDE",
+        "DAVI2",
+        "DBC",
+        "SOUND MAKERS"
+      ],
+      "styles": [
+        "Remember",
+        "Trance"
+      ],
+      "start": "2026-11-07T23:00:00+01:00",
+      "end": "2026-11-08T06:00:00+01:00",
+      "status": "scheduled",
+      "description_short": "Musiques électroniques au Studio GOЯRIA. A-GHOST • ANGEL GATO • AZULVERDE • DAVI2 • DBC • SOUND MAKERS. 23h–6h. Adhésion requise. +18 ans.",
+      "description_long": "",
+      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-d0fda7766fb143a9af64ad28998c811f.jpeg",
+      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/0711-zona-prohibida-gorria-biarritz",
+      "prices": [
+        5,
+        8,
+        10
+      ],
+      "age_min": 18,
+      "venue": {
+        "nom": "Studio GOЯRIA",
+        "rue": "14 rue des Mésanges",
+        "code_postal": "64200",
+        "ville": "Biarritz",
+        "pays": "FR",
+        "lat": 43.461686,
+        "lng": -1.539144
+      },
+      "updated_at": "2026-10-27T17:56:46.6333333+01:00"
     }
   ]
 }

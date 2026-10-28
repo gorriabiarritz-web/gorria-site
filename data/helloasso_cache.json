@@ -1,8 +1,33 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-10-27T12:36:39+01:00",
+  "lu_le": "2026-10-28T13:07:28+01:00",
   "source": "API HelloAsso v5",
   "formulaires": [
+    {
+      "formSlug": "0711-zona-prohibida-gorria-biarritz",
+      "title": "ZONA PROHIBIDA / GORRIA / BIARRITZ ",
+      "startDate": "2026-11-07T23:00:00+01:00",
+      "endDate": "2026-11-08T06:00:00+01:00",
+      "state": "Public",
+      "url": "https://www.helloasso.com/associations/sound-makers/evenements/0711-zona-prohibida-gorria-biarritz",
+      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-d0fda7766fb143a9af64ad28998c811f.jpeg",
+      "description": "🔈 Styles : Remember / Trance\n🎧 Dj's guest : A-GHOST • ANGEL GATO • AZULVERDE • DAVI2 • DBC • SOUND MAKERS\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaires : ouverture des portes 23h",
+      "tiers": [
+        {
+          "label": "Early",
+          "price": 500
+        },
+        {
+          "label": "Normal",
+          "price": 800
+        },
+        {
+          "label": "Late",
+          "price": 1000
+        }
+      ],
+      "updatedAt": "2026-10-27T17:56:46.6333333+01:00"
+    },
     {
       "formSlug": "iiie-anniversaire-gorria-biarritz",
       "title": "IIIe ANNIVERSAIRE / GORRIA / BIARRITZ",
