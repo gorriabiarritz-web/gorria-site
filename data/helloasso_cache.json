@@ -1,6 +1,6 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-10-29T13:18:23+01:00",
+  "lu_le": "2026-10-30T13:08:38+01:00",
   "source": "API HelloAsso v5",
   "formulaires": [
     {
@@ -139,7 +139,7 @@
           "price": 1000
         }
       ],
-      "updatedAt": "2026-09-09T11:24:00.2833333+02:00"
+      "updatedAt": "2026-10-30T04:02:34.13+01:00"
     }
   ]
 }
