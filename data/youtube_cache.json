@@ -1,8 +1,13 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-10-29T13:18:24+01:00",
+  "lu_le": "2026-10-31T12:41:59+01:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
+    {
+      "id": "2Zq2nRhq0Xk",
+      "titre": "Hard Trance | Jenna 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-30T17:00:09+00:00"
+    },
     {
       "id": "0giUWAzwp8c",
       "titre": "Techno | BLOC09 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
@@ -37,11 +42,6 @@
       "id": "XYCQG703x_E",
       "titre": "Techno | BLOC09 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-10-18T08:09:55+00:00"
-    },
-    {
-      "id": "2Zq2nRhq0Xk",
-      "titre": "Hard Trance | Jenna 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-18T07:28:07+00:00"
     },
     {
       "id": "0ys76O37cLI",
