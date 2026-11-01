@@ -1,6 +1,6 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-10-31T12:41:59+01:00",
+  "lu_le": "2026-11-01T13:41:26+01:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
     {
@@ -17,6 +17,26 @@
       "id": "za6TwdXkr_4",
       "titre": "Trance | A-Ghost | Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-10-26T17:00:08+00:00"
+    },
+    {
+      "id": "jdYGjbLe5no",
+      "titre": "Techno | BLOC09 | 3e ANNIVERSAIRE Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-25T16:38:45+00:00"
+    },
+    {
+      "id": "xixglVUafII",
+      "titre": "Hard Techno | GZK | 3e ANNIVERSAIRE Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-25T14:19:42+00:00"
+    },
+    {
+      "id": "ebUxMp1IX9s",
+      "titre": "Techno Trance | Lumi | 3e ANNIVERSAIRE Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-25T13:49:27+00:00"
+    },
+    {
+      "id": "jJEueqtw9Uk",
+      "titre": "Remember Trance | A-Ghost | 3e ANNIVERSAIRE Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-10-25T09:29:29+00:00"
     },
     {
       "id": "6yVHYrDVezw",
@@ -57,26 +77,6 @@
       "id": "HCBn5V-6Vs0",
       "titre": "Remember Trance Bumping | Angel Gonzalez X Sound Makers | Studio GoЯRia Biarritz | Septembre 2026",
       "publie": "2026-10-11T16:00:09+00:00"
-    },
-    {
-      "id": "8nzC1WZFLxo",
-      "titre": "Hard Dance NRG | Jenna 🇦🇺 | Studio GoЯRia Biarritz | Septembre 2026",
-      "publie": "2026-10-09T16:00:07+00:00"
-    },
-    {
-      "id": "wVKYZFRHArA",
-      "titre": "Remember Trance | Davi2 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
-      "publie": "2026-10-07T16:00:07+00:00"
-    },
-    {
-      "id": "pMjHB_og8Mo",
-      "titre": "Remember Trance | A-ghost 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
-      "publie": "2026-10-05T16:00:07+00:00"
-    },
-    {
-      "id": "z4LDtYczICg",
-      "titre": "Techno Hypnotique Hard Trance | Letal X Oyo 🇫🇷 | Studio GoЯRia Biarritz | Septembre 2026",
-      "publie": "2026-10-03T16:00:07+00:00"
     }
   ]
 }
