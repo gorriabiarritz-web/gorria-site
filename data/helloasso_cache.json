@@ -1,6 +1,6 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-11-02T15:46:54+01:00",
+  "lu_le": "2026-11-03T14:38:29+01:00",
   "source": "API HelloAsso v5",
   "formulaires": [
     {
@@ -90,31 +90,6 @@
         }
       ],
       "updatedAt": "2026-10-18T01:46:30.8066667+02:00"
-    },
-    {
-      "formSlug": "la-pastek-skuddimension2-gorria-biarritz",
-      "title": "LA PASTEK / SKUD DIMENSION 2 / GORRIA / BIARRITZ",
-      "startDate": "2026-10-03T23:00:00+02:00",
-      "endDate": "2026-10-04T06:00:00+02:00",
-      "state": "Public",
-      "url": "https://www.helloasso.com/associations/sound-makers/evenements/la-pastek-skuddimension2-gorria-biarritz",
-      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-18bd9194e4e44ddfac9482ac4c870480.jpeg",
-      "description": "🔈Styles : Techno / Acid / Tribe\n🎧 DJ's Guest : ZED • ROMAN • OXYDE14 • 220 MICRON • PAB'S • BEATRADERS\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h ",
-      "tiers": [
-        {
-          "label": "Early",
-          "price": 500
-        },
-        {
-          "label": "Normal",
-          "price": 800
-        },
-        {
-          "label": "Late",
-          "price": 1000
-        }
-      ],
-      "updatedAt": "2026-10-03T19:20:37.29+02:00"
     },
     {
       "formSlug": "night-pulse-dopamine-gorria-biarritz",

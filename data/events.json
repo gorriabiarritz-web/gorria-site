@@ -1,49 +1,6 @@
 {
-  "genere_le": "2026-11-02T15:46:51+01:00",
+  "genere_le": "2026-11-03T14:38:24+01:00",
   "events": [
-    {
-      "id": "helloasso:la-pastek-skuddimension2-gorria-biarritz",
-      "slug": "la-pastek-skuddimension2-gorria-biarritz",
-      "title": "LA PASTEK · SKUD DIMENSION 2",
-      "title_ascii": "LA PASTEK · SKUD DIMENSION 2",
-      "collective": "",
-      "lineup": [
-        "ZED",
-        "ROMAN",
-        "OXYDE14",
-        "220 MICRON",
-        "PAB'S",
-        "BEATRADERS"
-      ],
-      "styles": [
-        "Techno",
-        "Acid",
-        "Tribe"
-      ],
-      "start": "2026-10-03T23:00:00+02:00",
-      "end": "2026-10-04T06:00:00+02:00",
-      "status": "scheduled",
-      "description_short": "Musiques électroniques au Studio GOЯRIA. ZED • ROMAN • OXYDE14 • 220 MICRON • PAB'S • BEATRADERS. 23h–6h. Adhésion requise. +18 ans.",
-      "description_long": "",
-      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-18bd9194e4e44ddfac9482ac4c870480.jpeg",
-      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/la-pastek-skuddimension2-gorria-biarritz",
-      "prices": [
-        5,
-        8,
-        10
-      ],
-      "age_min": 18,
-      "venue": {
-        "nom": "Studio GOЯRIA",
-        "rue": "14 rue des Mésanges",
-        "code_postal": "64200",
-        "ville": "Biarritz",
-        "pays": "FR",
-        "lat": 43.461686,
-        "lng": -1.539144
-      },
-      "updated_at": "2026-10-03T19:20:37.29+02:00"
-    },
     {
       "id": "helloasso:liaison-collective-focale-1010-gorria-biarritz",
       "slug": "liaison-collective-focale-1010-gorria-biarritz",
