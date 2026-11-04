@@ -1,8 +1,13 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-11-02T15:46:54+01:00",
+  "lu_le": "2026-11-04T14:47:22+01:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
+    {
+      "id": "jJEueqtw9Uk",
+      "titre": "Remember Trance | A-Ghost | 3e ANNIVERSAIRE Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-11-03T17:00:06+00:00"
+    },
     {
       "id": "XYCQG703x_E",
       "titre": "Techno | BLOC09 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
@@ -37,11 +42,6 @@
       "id": "ebUxMp1IX9s",
       "titre": "Techno Trance | Lumi | 3e ANNIVERSAIRE Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-10-25T13:49:27+00:00"
-    },
-    {
-      "id": "jJEueqtw9Uk",
-      "titre": "Remember Trance | A-Ghost | 3e ANNIVERSAIRE Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-25T09:29:29+00:00"
     },
     {
       "id": "6yVHYrDVezw",
