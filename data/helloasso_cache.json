@@ -1,8 +1,33 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-11-05T14:59:19+01:00",
+  "lu_le": "2026-11-06T14:44:30+01:00",
   "source": "API HelloAsso v5",
   "formulaires": [
+    {
+      "formSlug": "liaison-collective-take-over-gorria-biarritz",
+      "title": "LIAISON COLLECTIVE / TAKE OVER / GORRIA / BIARRITZ",
+      "startDate": "2026-11-14T23:00:00+01:00",
+      "endDate": "2026-11-15T06:00:00+01:00",
+      "state": "Public",
+      "url": "https://www.helloasso.com/associations/sound-makers/evenements/liaison-collective-take-over-gorria-biarritz",
+      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-177ae13eb11e4164be92076c7e6fdda6.jpeg",
+      "description": "🔈Styles : Techno Hypnotique / Hard Trance / Hardgroove \n🎧 DJ's Guest : OYO • LOOV \n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h ",
+      "tiers": [
+        {
+          "label": "Early",
+          "price": 500
+        },
+        {
+          "label": "Normal",
+          "price": 800
+        },
+        {
+          "label": "Late",
+          "price": 1000
+        }
+      ],
+      "updatedAt": "2026-11-05T15:48:41.51+01:00"
+    },
     {
       "formSlug": "0711-zona-prohibida-gorria-biarritz",
       "title": "ZONA PROHIBIDA / GORRIA / BIARRITZ ",

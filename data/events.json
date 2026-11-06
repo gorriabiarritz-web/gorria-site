@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-11-05T14:59:15+01:00",
+  "genere_le": "2026-11-06T14:44:27+01:00",
   "events": [
     {
       "id": "helloasso:liaison-collective-focale-1010-gorria-biarritz",
@@ -198,6 +198,45 @@
         "lng": -1.539144
       },
       "updated_at": "2026-10-27T17:56:46.6333333+01:00"
+    },
+    {
+      "id": "helloasso:liaison-collective-take-over-gorria-biarritz",
+      "slug": "liaison-collective-take-over-gorria-biarritz",
+      "title": "LIAISON COLLECTIVE · TAKE OVER",
+      "title_ascii": "LIAISON COLLECTIVE · TAKE OVER",
+      "collective": "",
+      "lineup": [
+        "OYO",
+        "LOOV"
+      ],
+      "styles": [
+        "Techno Hypnotique",
+        "Hard Trance",
+        "Hardgroove"
+      ],
+      "start": "2026-11-14T23:00:00+01:00",
+      "end": "2026-11-15T06:00:00+01:00",
+      "status": "scheduled",
+      "description_short": "Musiques électroniques au Studio GOЯRIA. OYO • LOOV. 23h–6h. Adhésion requise. +18 ans.",
+      "description_long": "",
+      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-177ae13eb11e4164be92076c7e6fdda6.jpeg",
+      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/liaison-collective-take-over-gorria-biarritz",
+      "prices": [
+        5,
+        8,
+        10
+      ],
+      "age_min": 18,
+      "venue": {
+        "nom": "Studio GOЯRIA",
+        "rue": "14 rue des Mésanges",
+        "code_postal": "64200",
+        "ville": "Biarritz",
+        "pays": "FR",
+        "lat": 43.461686,
+        "lng": -1.539144
+      },
+      "updated_at": "2026-11-05T15:48:41.51+01:00"
     }
   ]
 }
