@@ -1,45 +1,6 @@
 {
-  "genere_le": "2026-11-09T16:11:21+01:00",
+  "genere_le": "2026-11-10T15:20:37+01:00",
   "events": [
-    {
-      "id": "helloasso:liaison-collective-focale-1010-gorria-biarritz",
-      "slug": "liaison-collective-focale-1010-gorria-biarritz",
-      "title": "LIAISON COLLECTIVE · FOCALE 1010",
-      "title_ascii": "LIAISON COLLECTIVE · FOCALE 1010",
-      "collective": "",
-      "lineup": [
-        "OYO",
-        "LOOV"
-      ],
-      "styles": [
-        "Techno Hypnotique",
-        "Hard Trance",
-        "Hardgroove"
-      ],
-      "start": "2026-10-10T23:00:00+02:00",
-      "end": "2026-10-11T06:00:00+02:00",
-      "status": "scheduled",
-      "description_short": "Musiques électroniques au Studio GOЯRIA. OYO • LOOV. 23h–6h. Adhésion requise. +18 ans.",
-      "description_long": "",
-      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-b3c91615c5de43408109b1615a29a576.png",
-      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/liaison-collective-focale-1010-gorria-biarritz",
-      "prices": [
-        5,
-        8,
-        10
-      ],
-      "age_min": 18,
-      "venue": {
-        "nom": "Studio GOЯRIA",
-        "rue": "14 rue des Mésanges",
-        "code_postal": "64200",
-        "ville": "Biarritz",
-        "pays": "FR",
-        "lat": 43.461686,
-        "lng": -1.539144
-      },
-      "updated_at": "2026-10-05T01:51:44.9066667+02:00"
-    },
     {
       "id": "helloasso:groove-district-002-gorria-biarritz",
       "slug": "groove-district-002-gorria-biarritz",
