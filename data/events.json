@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-11-10T15:20:37+01:00",
+  "genere_le": "2026-11-11T14:33:59+01:00",
   "events": [
     {
       "id": "helloasso:groove-district-002-gorria-biarritz",
@@ -198,6 +198,46 @@
         "lng": -1.539144
       },
       "updated_at": "2026-11-05T15:48:41.51+01:00"
+    },
+    {
+      "id": "helloasso:epiknes-2111-gorria-biarritz",
+      "slug": "epiknes-2111-gorria-biarritz",
+      "title": "EPIKNES 2111",
+      "title_ascii": "EPIKNES 2111",
+      "collective": "",
+      "lineup": [
+        "BEATRADERS",
+        "GZK",
+        "MORTFE3",
+        "OVNAM",
+        "SNOW"
+      ],
+      "styles": [
+        "Hard Techno"
+      ],
+      "start": "2026-11-21T23:00:00+01:00",
+      "end": "2026-11-22T06:00:00+01:00",
+      "status": "scheduled",
+      "description_short": "Musiques électroniques au Studio GOЯRIA. BEATRADERS • GZK • MORTFE3 • OVNAM • SNOW. 23h–6h. Adhésion requise. +18 ans.",
+      "description_long": "",
+      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-14b5c806ca37433fbbdfd7bf28b27276.jpeg",
+      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/epiknes-2111-gorria-biarritz",
+      "prices": [
+        5,
+        8,
+        10
+      ],
+      "age_min": 18,
+      "venue": {
+        "nom": "Studio GOЯRIA",
+        "rue": "14 rue des Mésanges",
+        "code_postal": "64200",
+        "ville": "Biarritz",
+        "pays": "FR",
+        "lat": 43.461686,
+        "lng": -1.539144
+      },
+      "updated_at": "2026-11-10T18:22:56.3033333+01:00"
     }
   ]
 }

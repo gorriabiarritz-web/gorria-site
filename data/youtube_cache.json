@@ -1,12 +1,27 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-11-10T15:20:41+01:00",
+  "lu_le": "2026-11-11T14:34:03+01:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
     {
       "id": "jdYGjbLe5no",
       "titre": "Techno | BLOC09 | 3e ANNIVERSAIRE Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-11-09T17:00:08+00:00"
+    },
+    {
+      "id": "yIfJtxlMkkU",
+      "titre": "Bumping Trance | Angel Gato 🇫🇷 | Studio GoЯRia Biarritz | Novembre 2026",
+      "publie": "2026-11-08T11:57:52+00:00"
+    },
+    {
+      "id": "VAB-0flC4RU",
+      "titre": "Remember Trance | Davi2 🇫🇷 | Studio GoЯRia Biarritz | Novembre 2026",
+      "publie": "2026-11-08T11:26:57+00:00"
+    },
+    {
+      "id": "MX1n04zL-nQ",
+      "titre": "Remember Trance | A-Ghost 🇫🇷 | Studio GoЯRia Biarritz | Novembre 2026",
+      "publie": "2026-11-08T10:49:45+00:00"
     },
     {
       "id": "xixglVUafII",
@@ -62,21 +77,6 @@
       "id": "za6TwdXkr_4",
       "titre": "Trance | A-Ghost | Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-10-26T17:00:08+00:00"
-    },
-    {
-      "id": "6yVHYrDVezw",
-      "titre": "Hard Techno | Beatraders 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-24T16:00:08+00:00"
-    },
-    {
-      "id": "bHBywmP4Cj8",
-      "titre": "Techno Trance | Oyo X Loov 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-22T16:00:07+00:00"
-    },
-    {
-      "id": "poDvdsPjicg",
-      "titre": "Hard Tekno Schranz | Pab's X Beatraders 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-20T16:00:09+00:00"
     }
   ]
 }
