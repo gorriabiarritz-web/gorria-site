@@ -1,6 +1,6 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-11-12T15:38:17+01:00",
+  "lu_le": "2026-11-13T14:56:14+01:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
     {
@@ -12,6 +12,11 @@
       "id": "jdYGjbLe5no",
       "titre": "Techno | BLOC09 | 3e ANNIVERSAIRE Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-11-09T17:00:08+00:00"
+    },
+    {
+      "id": "g7fepDfInwI",
+      "titre": "Remember Bumping | Dj DBC x Sound Makers | Studio GoЯRia Biarritz | Novembre 2026",
+      "publie": "2026-11-08T13:06:34+00:00"
     },
     {
       "id": "yIfJtxlMkkU",
@@ -72,11 +77,6 @@
       "id": "0giUWAzwp8c",
       "titre": "Techno | BLOC09 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-10-28T17:00:07+00:00"
-    },
-    {
-      "id": "za6TwdXkr_4",
-      "titre": "Trance | A-Ghost | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-26T17:00:08+00:00"
     }
   ]
 }
