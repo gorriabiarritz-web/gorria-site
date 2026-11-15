@@ -1,6 +1,6 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-11-14T13:57:59+01:00",
+  "lu_le": "2026-11-15T14:26:45+01:00",
   "source": "API HelloAsso v5",
   "formulaires": [
     {
@@ -51,7 +51,7 @@
           "price": 1000
         }
       ],
-      "updatedAt": "2026-11-05T15:48:41.51+01:00"
+      "updatedAt": "2026-11-15T04:10:25.1366667+01:00"
     },
     {
       "formSlug": "0711-zona-prohibida-gorria-biarritz",
