@@ -1,8 +1,33 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-11-16T15:48:17+01:00",
+  "lu_le": "2026-11-17T16:29:52+01:00",
   "source": "API HelloAsso v5",
   "formulaires": [
+    {
+      "formSlug": "groove-obsession-gorria-biarritz",
+      "title": "GROOVE OBSESSION / GORRIA / BIARRITZ",
+      "startDate": "2026-11-28T23:00:00+01:00",
+      "endDate": "2026-11-29T06:00:00+01:00",
+      "state": "Public",
+      "url": "https://www.helloasso.com/associations/sound-makers/evenements/groove-obsession-gorria-biarritz",
+      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-6722d6f55d8e47d5a9c42193c6f29b72.jpeg",
+      "description": "🔈 Styles : Techno Hypnotique / Minimale / Hardgroove\n🎧 DJ's Guest :  KAMY • GLENN • CYRIL CDJ • BLOC09 • ALEXI CEDANO\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h ",
+      "tiers": [
+        {
+          "label": "Early",
+          "price": 500
+        },
+        {
+          "label": "Normal",
+          "price": 800
+        },
+        {
+          "label": "Late",
+          "price": 1000
+        }
+      ],
+      "updatedAt": "2026-11-16T21:35:36.0133333+01:00"
+    },
     {
       "formSlug": "epiknes-2111-gorria-biarritz",
       "title": "EPIKNES 2111 / GORRIA / BIARRITZ",
@@ -94,27 +119,6 @@
         }
       ],
       "updatedAt": "2026-10-06T18:05:13.52+02:00"
-    },
-    {
-      "formSlug": "groove-district-002-gorria-biarritz",
-      "title": "GROOVE DISTRICT 002 / GORRIA / BIARRITZ",
-      "startDate": "2026-10-17T23:00:00+02:00",
-      "endDate": "2026-10-18T06:00:00+02:00",
-      "state": "Public",
-      "url": "https://www.helloasso.com/associations/sound-makers/evenements/groove-district-002-gorria-biarritz",
-      "banner": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-e627b48fca5045bcaca37f34e646a4ab.jpeg",
-      "description": "🔈Styles : Hard Groove / Hard Techno / Trance / Psytrance / Hardcore\n🎧 DJ's Guest : THYLANE • SEYO • CYRIL CDJ\n📍 Lieu : GOЯRIA , 14 rue des Mésanges, Biarritz\n⏰ Horaire : ouverture des portes 23h",
-      "tiers": [
-        {
-          "label": "Normal",
-          "price": 800
-        },
-        {
-          "label": "Late",
-          "price": 1000
-        }
-      ],
-      "updatedAt": "2026-10-18T01:46:30.8066667+02:00"
     },
     {
       "formSlug": "night-pulse-dopamine-gorria-biarritz",

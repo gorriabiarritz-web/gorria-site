@@ -1,47 +1,6 @@
 {
-  "genere_le": "2026-11-16T15:48:13+01:00",
+  "genere_le": "2026-11-17T16:29:48+01:00",
   "events": [
-    {
-      "id": "helloasso:groove-district-002-gorria-biarritz",
-      "slug": "groove-district-002-gorria-biarritz",
-      "title": "GROOVE DISTRICT 002",
-      "title_ascii": "GROOVE DISTRICT 002",
-      "collective": "",
-      "lineup": [
-        "THYLANE",
-        "SEYO",
-        "CYRIL CDJ"
-      ],
-      "styles": [
-        "Hard Groove",
-        "Hard Techno",
-        "Trance",
-        "Psytrance",
-        "Hardcore"
-      ],
-      "start": "2026-10-17T23:00:00+02:00",
-      "end": "2026-10-18T06:00:00+02:00",
-      "status": "scheduled",
-      "description_short": "Musiques électroniques au Studio GOЯRIA. THYLANE • SEYO • CYRIL CDJ. 23h–6h. Adhésion requise. +18 ans.",
-      "description_long": "",
-      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-e627b48fca5045bcaca37f34e646a4ab.jpeg",
-      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/groove-district-002-gorria-biarritz",
-      "prices": [
-        8,
-        10
-      ],
-      "age_min": 18,
-      "venue": {
-        "nom": "Studio GOЯRIA",
-        "rue": "14 rue des Mésanges",
-        "code_postal": "64200",
-        "ville": "Biarritz",
-        "pays": "FR",
-        "lat": 43.461686,
-        "lng": -1.539144
-      },
-      "updated_at": "2026-10-18T01:46:30.8066667+02:00"
-    },
     {
       "id": "helloasso:iiie-anniversaire-gorria-biarritz",
       "slug": "iiie-anniversaire-gorria-biarritz",
@@ -238,6 +197,48 @@
         "lng": -1.539144
       },
       "updated_at": "2026-11-10T18:22:56.3033333+01:00"
+    },
+    {
+      "id": "helloasso:groove-obsession-gorria-biarritz",
+      "slug": "groove-obsession-gorria-biarritz",
+      "title": "GROOVE OBSESSION",
+      "title_ascii": "GROOVE OBSESSION",
+      "collective": "",
+      "lineup": [
+        "KAMY",
+        "GLENN",
+        "CYRIL CDJ",
+        "BLOC09",
+        "ALEXI CEDANO"
+      ],
+      "styles": [
+        "Techno Hypnotique",
+        "Minimale",
+        "Hardgroove"
+      ],
+      "start": "2026-11-28T23:00:00+01:00",
+      "end": "2026-11-29T06:00:00+01:00",
+      "status": "scheduled",
+      "description_short": "Musiques électroniques au Studio GOЯRIA. KAMY • GLENN • CYRIL CDJ • BLOC09 • ALEXI CEDANO. 23h–6h. Adhésion requise. +18 ans.",
+      "description_long": "",
+      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-6722d6f55d8e47d5a9c42193c6f29b72.jpeg",
+      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/groove-obsession-gorria-biarritz",
+      "prices": [
+        5,
+        8,
+        10
+      ],
+      "age_min": 18,
+      "venue": {
+        "nom": "Studio GOЯRIA",
+        "rue": "14 rue des Mésanges",
+        "code_postal": "64200",
+        "ville": "Biarritz",
+        "pays": "FR",
+        "lat": 43.461686,
+        "lng": -1.539144
+      },
+      "updated_at": "2026-11-16T21:35:36.0133333+01:00"
     }
   ]
 }
