@@ -1,8 +1,23 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-11-16T15:48:17+01:00",
+  "lu_le": "2026-11-18T16:06:29+01:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
+    {
+      "id": "Jx6gf7pdzlQ",
+      "titre": "Techno Trance | Evytho X Oyo 🇫🇷 | Studio GoЯRia Biarritz | Novembre 2026",
+      "publie": "2026-11-18T04:59:28+00:00"
+    },
+    {
+      "id": "2JtNSlk9SVw",
+      "titre": "Techno Dj set | Selecta | Studio GoЯRia Biarritz | Novembre 2026",
+      "publie": "2026-11-18T04:36:54+00:00"
+    },
+    {
+      "id": "4ZKTZgToaUI",
+      "titre": "Hard Techno Trance | KitX x Beatraders | Halloween Dj Set | Studio GoЯRia Biarritz | Octobre 2026",
+      "publie": "2026-11-17T17:00:07+00:00"
+    },
     {
       "id": "9s4wyuk9evc",
       "titre": "Hard Techno Trance | Max Guzzi | Studio GoЯRia Biarritz | Octobre 2026",
@@ -62,21 +77,6 @@
       "id": "XYCQG703x_E",
       "titre": "Techno | BLOC09 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
       "publie": "2026-11-01T17:00:09+00:00"
-    },
-    {
-      "id": "4ZKTZgToaUI",
-      "titre": "Hard Techno Trance | KitX x Beatraders | Halloween Dj Set | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-11-01T10:33:20+00:00"
-    },
-    {
-      "id": "2Zq2nRhq0Xk",
-      "titre": "Hard Trance | Jenna 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-30T17:00:09+00:00"
-    },
-    {
-      "id": "0giUWAzwp8c",
-      "titre": "Techno | BLOC09 🇫🇷 | Studio GoЯRia Biarritz | Octobre 2026",
-      "publie": "2026-10-28T17:00:07+00:00"
     }
   ]
 }
