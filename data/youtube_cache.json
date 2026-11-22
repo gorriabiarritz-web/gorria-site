@@ -1,8 +1,13 @@
 {
   "_doc": "Dernières vidéos longues de la chaîne YouTube (écrit par scripts/build.py).",
-  "lu_le": "2026-11-20T15:54:11+01:00",
+  "lu_le": "2026-11-22T15:03:01+01:00",
   "source": "https://www.youtube.com/feeds/videos.xml?playlist_id=UULFxc4rj6lfImrX5L4ztpcJSw",
   "videos": [
+    {
+      "id": "VAB-0flC4RU",
+      "titre": "Remember Trance | Davi2 🇫🇷 | Studio GoЯRia Biarritz | Novembre 2026",
+      "publie": "2026-11-21T17:00:08+00:00"
+    },
     {
       "id": "MX1n04zL-nQ",
       "titre": "Remember Trance | A-Ghost 🇫🇷 | Studio GoЯRia Biarritz | Novembre 2026",
@@ -62,11 +67,6 @@
       "id": "yIfJtxlMkkU",
       "titre": "Bumping Trance | Angel Gato 🇫🇷 | Studio GoЯRia Biarritz | Novembre 2026",
       "publie": "2026-11-08T11:57:52+00:00"
-    },
-    {
-      "id": "VAB-0flC4RU",
-      "titre": "Remember Trance | Davi2 🇫🇷 | Studio GoЯRia Biarritz | Novembre 2026",
-      "publie": "2026-11-08T11:26:57+00:00"
     },
     {
       "id": "xixglVUafII",

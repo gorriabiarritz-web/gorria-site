@@ -1,6 +1,6 @@
 {
   "_doc": "Dernière lecture de l'API HelloAsso (écrit par scripts/build.py). Ne pas modifier à la main : utiliser data/overrides.json.",
-  "lu_le": "2026-11-21T15:13:23+01:00",
+  "lu_le": "2026-11-22T15:03:00+01:00",
   "source": "API HelloAsso v5",
   "formulaires": [
     {
@@ -51,7 +51,7 @@
           "price": 1000
         }
       ],
-      "updatedAt": "2026-11-10T18:22:56.3033333+01:00"
+      "updatedAt": "2026-11-22T00:08:32.39+01:00"
     },
     {
       "formSlug": "liaison-collective-take-over-gorria-biarritz",
