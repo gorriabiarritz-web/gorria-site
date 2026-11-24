@@ -1,41 +1,6 @@
 {
-  "genere_le": "2026-11-23T18:24:24+01:00",
+  "genere_le": "2026-11-24T17:57:46+01:00",
   "events": [
-    {
-      "id": "helloasso:iiie-anniversaire-gorria-biarritz",
-      "slug": "iiie-anniversaire-gorria-biarritz",
-      "title": "IIIe ANNIVERSAIRE",
-      "title_ascii": "IIIe ANNIVERSAIRE",
-      "collective": "",
-      "lineup": [],
-      "styles": [
-        "Techno",
-        "Hard Trance",
-        "Hard Techno",
-        "Bounce"
-      ],
-      "start": "2026-10-24T22:00:00+02:00",
-      "end": "2026-10-25T07:00:00+01:00",
-      "status": "scheduled",
-      "description_short": "Musiques électroniques au Studio GOЯRIA. 22h–7h. Adhésion requise. +18 ans.",
-      "description_long": "📅 Date : Samedi 24 Octobre 2025",
-      "image": "https://cdn.helloasso.com/img/photos/evenements/cropped-image-e76934a271a841e98f86a758eaef9b76.jpeg",
-      "ticket_url": "https://www.helloasso.com/associations/sound-makers/evenements/iiie-anniversaire-gorria-biarritz",
-      "prices": [
-        10
-      ],
-      "age_min": 18,
-      "venue": {
-        "nom": "Studio GOЯRIA",
-        "rue": "14 rue des Mésanges",
-        "code_postal": "64200",
-        "ville": "Biarritz",
-        "pays": "FR",
-        "lat": 43.461686,
-        "lng": -1.539144
-      },
-      "updated_at": "2026-10-06T18:05:13.52+02:00"
-    },
     {
       "id": "helloasso:night-pulse-dopamine-gorria-biarritz",
       "slug": "night-pulse-dopamine-gorria-biarritz",
